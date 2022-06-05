@@ -1,0 +1,30 @@
+section.repository-list {
+  margin: 40px;
+
+  h1 {
+    margin-bottom: 16px;
+  }
+
+  ul {
+    list-style: none; //usado para retirar os pontos de indicacao de Lista
+
+    li {
+      & + li { // & (referencia o proprio elemento), toda li(+) que antes dela tenha outra li(&), colocar margin-top
+        margin-top: 20px;
+      }
+
+      p {
+        font-size: 14px;
+        color: #444;
+        margin-top: 8px;
+      }
+
+      a {
+        display: inline-block;
+        margin-top: 16px;
+        text-decoration: none; // para retirar sublinhado dos links
+        color: #8257e6;
+      }
+    }
+  }
+}
